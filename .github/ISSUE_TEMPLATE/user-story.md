@@ -7,17 +7,19 @@ assignees: ''
 
 ---
 
-**As a** [role]  
- **I need** [function]  
- **So that** [benefit]  
+**As a** [Catalog Administrator]  
+ **I need** [to add a new product to the catalog  ]  
+ **So that** [customers can view and purchase new inventory]  
    
  ### Details and Assumptions
- * [document what you know]
+ * [Product must include a name, description, and price]
+ * [Duplicate product IDs are not allowed]
    
  ### Acceptance Criteria  
    
  ```gherkin
- Given [some context]
- When [certain action is taken]
- Then [the outcome of action is observed]
+ Given [I am on the "Add Product" page]
+ When [I enter valid product details and click "Save"]
+ Then [a new product record should be created in the database]
+ And [I should see a "Product Created Successfully" confirmation]
  ```
